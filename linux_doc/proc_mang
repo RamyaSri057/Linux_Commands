@@ -1,0 +1,14 @@
+## Process Management
+ps # Display your currently running processes
+ps -ef # Display all the currently running processes on the
+system.
+ps -ef | grep processname # Display process information for processname
+top # Display and manage the top processes
+htop # Interactive process viewer (top alternative)
+kill pid # Kill process with process ID of pid
+killall processname # Kill all processes named processname
+program & # Start program in the background
+bg # Display stopped or background jobs
+fg # Brings the most recent background job to
+foreground
+fg n # Brings job n to the foreground

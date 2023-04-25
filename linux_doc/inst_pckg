@@ -1,0 +1,14 @@
+## Installing Packages
+yum search keyword # Search for a package by keyword.
+yum install package # Install package.
+yum info package # Display description and summary information
+about package.
+rpm -i package.rpm # Install package from local file named
+package.rpm
+yum remove package # Remove/uninstall package.
+tar zxvf sourcecode.tar.gz
+cd sourcecode
+./configure
+make
+make install
+

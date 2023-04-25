@@ -1,0 +1,17 @@
+## System Information commands
+uname : It displays information about the Operating System
+uname -a : It prints the system info like kernal release date,network node information, hardware info etc.
+uname -r : It print the kernel release information
+uname -o : It prints the name of the Operating system
+uname -p : Type of the processor
+uname -m : machine hardware name
+uname -v : current version of the kernel
+uname -s : kernel name 
+uname -n : It prints the hostname of the network node/IP 
+date     : It displays the current date and time 
+cal      : Shows the month's calendar
+uptime   : displays how long the system has been running time + load 
+last rebot : shows system rebot history
+w        : shows who is online
+whoami   : who you are logged in as
+cat /etc/redhat-release : which version of redhat installed

@@ -1,0 +1,5 @@
+## SSH Logins
+ssh host # Connect to host as your local username.
+ssh user@host # Connect to host as user
+ssh -p port user@host # Connect to host using port
+

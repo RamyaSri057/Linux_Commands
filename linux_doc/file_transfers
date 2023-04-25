@@ -1,0 +1,13 @@
+## File Transfers
+scp file.txt server:/tmp # Secure copy file.txt to the /tmp folder on
+server
+scp server:/var/www/*.html /tmp # Copy *.html files from server to the local
+/tmp folder.
+scp -r server:/var/www /tmp # Copy all files and directories recursively from
+server to the current system's /tmp folder.
+rsync -a /home /backups/ # Synchronize /home to /backups/home
+rsync -avz /home
+server:/backups/
+# Synchronize files/directories between the local
+and remote system with compression enabled
+
