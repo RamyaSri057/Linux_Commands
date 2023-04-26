@@ -7,5 +7,8 @@ groupadd test : Create a group named "test".
 useradd -c "John Smith" -m john : Create an account named john, with a comment of "John Smith" and create the user's home directory.
 userdel john : Delete the john account.
 usermod -aG sales john : Add the john account to the sales group
-cat /etc/passwd : to check the list of users added there
-cat /etc/group  : to check the list of groups added there
+cat /etc/passwd : Information regarding users' account
+cat /etc/group  : Information about groups
+cat /etc/shadow  : user security-related information.
+cat /etc/gshadow  : group security-related information
+cat /etc/login. defs : shadow password suite configuration.
