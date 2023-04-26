@@ -1,8 +1,7 @@
 ## Search
-grep pattern file # Search for pattern in file
-grep -r pattern directory # Search recursively for pattern in directory
-locate name # Find files and directories by name
-find /home/john -name
-'prefix*'
-# Find files in /home/john that start with "prefix".
-find /home -size +100M
+grep pattern file : Search for pattern in file
+grep -r pattern directory : Search recursively for pattern in directory
+locate name : Find files and directories by name
+find /home/john -name 'prefix*' : Find files in /home/john that start with "prefix".find /home -size +100M
+find /home/ -name "index" : Find file names that begin with 'index' in /home folder
+find /home -size +10000k : Find files greater than 10000k in the home folder
