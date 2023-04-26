@@ -1,14 +1,13 @@
 ## Installing Packages
-yum search keyword # Search for a package by keyword.
-yum install package # Install package.
-yum info package # Display description and summary information
-about package.
-rpm -i package.rpm # Install package from local file named
-package.rpm
-yum remove package # Remove/uninstall package.
-tar zxvf sourcecode.tar.gz
-cd sourcecode
-./configure
-make
-make install
-
+yum search keyword : Search for a package by keyword.
+yum install package : Install package.
+yum info package : Display description and summary information about package.
+yum remove package : Remove/uninstall package.tar zxvf sourcecode.tar.gz cd sourcecode ./configure make make install
+rpm -i package.rpm : Install package from local file named package.rpm
+rpm -e pkg_name  : Remove an rpm package
+dnf install pkg_name : Install package using dnf utility
+###########
+Install Source (Complications)
+./configure : Checks your system for the required software needed to build the program. It will build the Makefile containing the instructions required to effectively build the project
+make : It reads the Makefile to compile the program with the required operations. The process may take some time, depending on your system and the size of the program
+make install : The command installs the binaries in the default/modified paths after the compilation
