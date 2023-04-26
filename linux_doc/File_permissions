@@ -1,0 +1,22 @@
+chmod octal file-name : Change file permissions of the file to octal
+chmod 777 /data/test.c  : Set rwx permissions to owner, group and everyone (everyone else who has access to the server)
+chmod 755 /data/test.c  : Set rwx to the owner and r_x to group and everyone
+chmod 766 /data/test.c  : Sets rwx for owner, rw for group and everyone
+chown owner user-file   : Change ownership of the file
+chown owner-user:owner-group file_name : change owner and group owner of the file 
+chown owner-user:owner-group directory : change owner and group owner of the directory
+U G W
+ rwx rwx rwx chmod 777 filename # Use sparingly!
+ rwx rwx r-x chmod 775 filename
+ rwx r-x r-x chmod 755 filename
+ rw- rw- r-- chmod 664 filename
+ rw- r-- r-- chmod 644 filename
+ ---------------------------
+LEGEND
+ U = User
+ G = Group
+ W = World
+ r = Read  - 4
+ w = write - 2
+ x = execute - 1
+ - = no access
