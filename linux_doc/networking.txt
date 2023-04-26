@@ -1,15 +1,18 @@
 ## Networking
-ifconfig -a # Display all network interfaces and ip address
-ifconfig eth0 # Display eth0 address and details
-ethtool eth0 # Query or control network driver and hardware settings
-ping host # Send ICMP echo request to host
-whois domain # Display whois information for domain
-dig domain # Display DNS information for domain
-dig -x IP_ADDRESS # Reverse lookup of IP_ADDRESS
-host domain # Display DNS ip address for domain
-hostname -i # Display the network address of the host name.
-hostname -I # Display all local ip addresses
-wget http://domain.com/file # Download http://domain.com/file
-netstat -nutlp # Display listening tcp and udp ports and corresponding
-programs
-
+ifconfig -a : Display all network interfaces and ip address
+ifconfig eth0 : Display eth0 address and details
+ip addr show : Displays IP addresses and all the network interfaces
+ip address add 192.168.0.1/24 dev eth0 : Assigns IP address 192.168.0.1 to interface eth0
+ifconfig : Displays IP addresses of all network interfaces
+ethtool eth0 : Query or control network driver and hardware settings
+ping host : Send ICMP echo request to host OR ping command sends an ICMP echo request to establish a connection to server / PC
+whois domain : Display whois information for domain
+dig domain : Display DNS information for domain
+dig -x IP_ADDRESS : Reverse lookup of IP_ADDRESS
+dig -x host : Performs reverse lookup on a domain
+host domain : Display DNS ip address for domain
+hostname -i : Display the network address of the host name.
+hostname -I : Display all local ip addresses
+host google.com : Performs an IP lookup for the domain name
+wget http://domain.com/file : Download http://domain.com/file OR wget file_name : Downloads a file from an online source
+netstat -nutlp : Display listening tcp and udp ports and corresponding programs OR netstat -pnltu : Displays all active listening ports
