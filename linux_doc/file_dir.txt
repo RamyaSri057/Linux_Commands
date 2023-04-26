@@ -23,3 +23,4 @@ more file_name : displays the Outputs the contents of a file
 gpg -c file_name : Encrypt a file
 gog file_name.gpg   : Decrypt a file
 wc   :  Prints the number of bytes, words and lines in a file
+xargs : Executes commands from standard input
