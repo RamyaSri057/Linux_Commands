@@ -2,4 +2,6 @@
 ssh host # Connect to host as your local username.
 ssh user@host # Connect to host as user
 ssh -p port user@host # Connect to host using port
-
+ssh username@serverIP (ssh root@182.56.09.1) : Login to remote host
+ssh -v username@IPaddress : debug ssh client
+ssh -V localhost or ssh -vv localhost : Display ssh client version
